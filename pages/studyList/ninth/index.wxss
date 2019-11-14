@@ -1,0 +1,26 @@
+/* pages/studyList/ninth/index.wxss */
+.storage-container{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.storage-input{
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0px 5px;
+}
+.storage-btn{
+  height: 40px;
+  line-height: 40px;
+}
+.storage-view{
+  padding: 10px;
+}
+.storage-line{
+  width: 100%;
+  display: flex;
+  line-height: 30px;
+}

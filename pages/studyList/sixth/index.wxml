@@ -1,0 +1,7 @@
+<!--pages/studyList/sixth/index.wxml-->
+<view class="menu-container">
+  <navigator wx:for="{{menuData}}" wx:key="index" url="{{item.url}}" class="menu-item">
+    <image src="{{item.src}}" class="menu-img" mode="widthFix"></image>
+    <text class="menu-text">{{item.text}}</text>
+  </navigator>
+</view>

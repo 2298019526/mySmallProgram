@@ -1,0 +1,12 @@
+<view class="image-line">
+  <text>image组件使用的最多的mode为widthFix:图片本身宽度小于父元素宽度时为图片的宽度，高度也为本身图片的高度，宽度小于父元素时为父元素宽度，高度按照原图等比例缩小</text>
+  <image class="image" mode="widthFix" src="../../../images/head01.jpg"></image>
+</view>
+
+<view class="image-list">
+  <text>多个image组件一起排列的时候底部会出现空隙，可以使用flex布局消除</text>
+  <image class="image" mode="widthFix" src="../../../images/head01.jpg"></image>
+  <image class="image" mode="widthFix" src="../../../images/head02.jpg"></image>
+  <image class="image" mode="widthFix" src="../../../images/head03.jpg"></image>
+  <image class="image" mode="widthFix" src="../../../images/head01.jpg"></image>
+</view>

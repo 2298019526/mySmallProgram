@@ -1,0 +1,4 @@
+/* pages/studyList/fifth/index.wxss */
+.image{
+  width: 100%;
+}

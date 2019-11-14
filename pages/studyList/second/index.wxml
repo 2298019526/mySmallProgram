@@ -1,0 +1,10 @@
+<!--pages/studyList/second/index.wxml-->
+<view wx:if="{{number<5}}">
+  number的值小于5，值为: {{number}}
+</view>
+<view wx:elif="{{number==5}}">
+  number的值等于5，值为: {{number}}
+</view>
+<view wx:if="{{number>5}}">
+  number的值大于5，值为: {{number}}
+</view>

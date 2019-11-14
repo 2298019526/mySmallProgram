@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/studyList/index",
+    "pages/studyList/first/index",
+    "pages/studyList/second/index",
+    "pages/studyList/third/index",
+    "pages/studyList/fouth/index",
+    "pages/studyList/fifth/index",
+    "pages/studyList/sixth/index",
+    "pages/studyList/seventh/index",
+    "pages/studyList/eighth/index",
+    "pages/studyList/ninth/index",
+
+
+    "pages/index/index",
+    "pages/search/index",
+    "pages/mine/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "互联网资源池",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/studyList/index",
+        "text": "学习列表",
+        "iconPath": "images/list.png",
+        "selectedIconPath": "images/list-fill.png"
+      },{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-fill.png"
+      },{
+        "pagePath": "pages/search/index",
+        "text": "搜索",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search-fill.png"
+      },{
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user-fill.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

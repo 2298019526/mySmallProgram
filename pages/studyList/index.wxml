@@ -1,0 +1,27 @@
+<view class="study-line">
+  <navigator url="second/index">wxml中使用if..else语句</navigator>
+</view>
+<view class="study-line">
+  <navigator url="third/index">js远程请求数据</navigator>
+</view>
+<view class="study-line">
+  <navigator url="sixth/index">快捷菜单实现</navigator>
+</view>
+<view class="study-line">
+  <navigator url="seventh/index">淘宝瀑布流商品布局</navigator>
+</view>
+<view class="study-line">
+  <navigator url="fouth/index">wxml for语句的使用</navigator>
+</view>
+<view class="study-line">
+  <navigator url="eighth/index">表单注册功能实现</navigator>
+</view>
+<view class="study-line">
+  <navigator url="ninth/index">本地存储方法</navigator>
+</view>
+<view class="study-line">
+  <navigator url="first/index">组件：图片组件：image</navigator>
+</view>
+<view class="study-line">
+  <navigator url="fifth/index">组件：滑块视图组件：swiper</navigator>
+</view>

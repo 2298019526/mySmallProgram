@@ -1,0 +1,26 @@
+<!--pages/studyList/seventh/index.wxml-->
+<view class="container">
+  <view class="commodity-item">
+    <navigator class="commodity-box" wx:for="{{commodityData}}" wx:if="{{index%2==0}}" wx:key="index">
+      <image src="{{item.src}}" mode="widthFix" class="commodity-image"></image>
+      <text class="commodity-title">{{item.title}}</text>
+      <view class="commodity-detailed">
+        <text class="commodity-icon">￥</text>
+        <text class="commodity-price">{{item.price}} </text>
+        <text class="commodity-visitors">{{item.visitorsNum}}人浏览</text>
+      </view>
+    </navigator>
+  </view>
+  <view class="commodity-item">
+    <navigator class="commodity-box" wx:for="{{commodityData}}" wx:if="{{index%2==1}}" wx:key="index">
+      <image src="{{item.src}}" mode="widthFix" class="commodity-image"></image>
+      <text class="commodity-title">{{item.title}}</text>
+      <view class="commodity-detailed">
+        <text class="commodity-icon">￥</text>
+        <text class="commodity-price">{{item.price}} </text>
+        <text class="commodity-visitors">{{item.visitorsNum}}人浏览</text>
+      </view>
+    </navigator>
+  </view>
+  
+</view>

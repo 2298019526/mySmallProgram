@@ -1,0 +1,74 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="head">
+    <image mode="widthFix" src="/images/head01.jpg"></image>
+  </view>
+  <view class="banner-container">
+    <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+      <block wx:for="{{imageData}}" wx:key="{{item.id}}">
+        <navigator url="{{item.url}}">
+          <swiper-item>
+            <image class="banner-image" mode="widthFix" src="{{item.src}}"></image>
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
+  </view>
+  <view class="menu-container">
+    <navigator wx:for="{{menuData}}" wx:key="index" url="{{item.url}}" class="menu-item">
+      <image src="{{item.src}}" class="menu-img" mode="widthFix"></image>
+      <text class="menu-text">{{item.text}}</text>
+    </navigator>
+  </view>
+  <view class="nav-container">
+    <text class="nav-icon"></text>
+    <text class="nav-content">最新上架商品</text>
+    <navigator class="nav-more">更多>>></navigator>
+  </view>
+  <view class="commodity-container">
+    <view class="commodity-item">
+      <navigator class="commodity-box" wx:for="{{commodityData}}" wx:if="{{index%2==0}}" wx:key="index">
+        <image src="{{item.src}}" mode="widthFix" class="commodity-image"></image>
+        <text class="commodity-title">{{item.title}}</text>
+        <view class="commodity-detailed">
+          <text class="commodity-icon">￥</text>
+          <text class="commodity-price">{{item.price}} </text>
+          <text class="commodity-visitors">{{item.visitorsNum}}人浏览</text>
+        </view>
+      </navigator>
+    </view>
+    <view class="commodity-item">
+      <navigator class="commodity-box" wx:for="{{commodityData}}" wx:if="{{index%2==1}}" wx:key="index">
+        <image src="{{item.src}}" mode="widthFix" class="commodity-image"></image>
+        <text class="commodity-title">{{item.title}}</text>
+        <view class="commodity-detailed">
+          <text class="commodity-icon">￥</text>
+          <text class="commodity-price">{{item.price}} </text>
+          <text class="commodity-visitors">{{item.visitorsNum}}人浏览</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="nav-container">
+    <text class="nav-icon"></text>
+    <text class="nav-content">销售排行</text>
+    <navigator class="nav-more">更多>>></navigator>
+  </view>
+  <view class="sale-container">
+    <view class="sale-line" wx:for="{{saleData}}">
+      <view class="sale-head">
+        <image class="sale-image" src="{{item.src}}"></image>
+      </view>
+      <view class="sale-content">
+        <view class="sale-commodity-title">{{item.title}}</view>
+        <view class="sale-commodity-describe">{{item.describe}}</view>
+        <view class="sale-commodity-num">
+          <text class="sale-number">N0.{{item.saleNum}}</text>
+          <text class="sale-browse">{{item.visitors}}人浏览</text>
+          <text class="sale-price">￥{{item.price}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,17 @@
+<!--pages/studyList/fifth/index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" current="{{current}}" bindchange="currentChange">
+  <block wx:for="{{imageData}}" wx:key="{{item.id}}">
+    <navigator url="{{item.url}}">
+      <swiper-item>
+        <image class="image" mode="widthFix" src="{{item.src}}"></image>
+      </swiper-item>
+    </navigator>
+  </block>
+</swiper>
+<view>
+  <view>swiper属性：indicator-dots:是否显示面板指示点 (默认false)</view>
+  <view>swiper属性：autoplay:是否自动切换 (默认false)</view>
+  <view>swiper属性：current:当前所在滑块的 index (默认0)</view>
+  <view>swiper属性：interval:自动切换时间间隔 (默认5000毫秒)</view>
+  <view>swiper属性：duration:滑动动画时长 (默认500毫秒)</view>
+</view>

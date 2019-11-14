@@ -1,0 +1,3 @@
+<!--pages/studyList/third/index.wxml-->
+<button bindtap="getData">点击获取数据</button>
+<text>数据statusCode值为： {{statusCode}}</text>

@@ -1,0 +1,15 @@
+/* pages/studyList/first/index.wxss */
+.image-line{
+  width: 100%;
+}
+text{
+  font-size: 14px;
+  line-height: 16px;
+}
+.image{
+  width: 100%;
+}
+.image-list{
+  display: flex;
+  flex-direction: column;
+}

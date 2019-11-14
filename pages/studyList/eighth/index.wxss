@@ -1,0 +1,28 @@
+/* pages/studyList/eighth/index.wxss */
+.form-line{
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  display: flex;
+  line-height: 30px;
+}
+.form-label{
+  font-size: 14px;
+  color: #333;
+}
+.form-input{
+  flex: 1;
+  height: 30px;
+  padding: 0px 5px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+}
+.form-error{
+  color: red;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+.form-btn{
+  width: 40%;
+}

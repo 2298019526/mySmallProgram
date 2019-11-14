@@ -1,0 +1,24 @@
+/* pages/studyList/sixth/index.wxss */
+.menu-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-item{
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.menu-img{
+  width: 60%;
+}
+.menu-text{
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #666;
+  text-align: center
+}

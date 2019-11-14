@@ -1,0 +1,4 @@
+<!--pages/studyList/fouth/index.wxml-->
+<view wx:for="{{listData}}" wx:for-index="key" wx:for-item="value">
+  <text>下标为：{{key}}，text值为：{{value.text}}</text>
+</view>

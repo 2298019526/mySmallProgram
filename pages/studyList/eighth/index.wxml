@@ -1,0 +1,20 @@
+<!--pages/studyList/eighth/index.wxml-->
+<form bindsubmit="submitFrom" bindreset="resetFrom">
+  <view class="form-line">
+    <text class="form-label">请输入用户名：</text>
+    <input class="form-input" placeholder="用户名" name="userName" value="{{userName}}" />
+  </view>
+  <view class="form-line">
+    <text class="form-label">请输入密码：</text>
+    <input class="form-input" placeholder="密码" password="true" name="userPwd1" value="{{userPwd1}}" />
+  </view>
+  <view class="form-line">
+    <text class="form-label">请确认密码：</text>
+    <input class="form-input" placeholder="密码" password="true" name="userPwd2" value="{{userPwd2}}"/>
+  </view>
+  <view wx:if="{{formError}}" class="form-error">{{formError}}</view>
+  <view class="form-line">
+    <button class="form-btn" type="primary" form-type="submit">注册</button>
+    <button class="form-btn" form-type="reset">重置</button>
+  </view>
+</form>

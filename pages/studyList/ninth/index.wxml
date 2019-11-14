@@ -1,0 +1,11 @@
+<!--pages/studyList/ninth/index.wxml-->
+<view class="storage-container">
+  <input class="storage-input" placeholder="请输入数据" bindinput='expInput'/>
+  <button class="storage-btn" bindtap="addStorage">添加缓存</button>
+</view>
+<view class="storage-view">
+  <view class="storage-line" wx:for="{{storageArr}}" wx:key="index">
+    <text>{{item}}</text>
+  </view>
+  <view><button type="warn" bindtap="clearStorage">清除缓存</button></view>
+</view>
